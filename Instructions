@@ -1,0 +1,27 @@
+# 1- Install dependencies
+npm install jest supertest mongodb-memory-server
+
+# Copy the test files to project
+# - Save the main test suite as `tests/pms.test.js`
+# - Save test runner as `test-runner.js`
+# - Save setup file as `tests/setup.js`
+
+
+# - Names can be whatever you want, but MAKE SURE they are .js
+# Update  package.json with the provided scripts
+
+# 1.5 make sure to setup test-runner
+node test-runner.js setup
+
+
+# 2-  Run complete test suite
+npm run test:full
+
+# Run specific test phases
+npm run test:unit
+npm run test:integration
+npm run test:system
+npm run test:performance
+
+# Generate reports
+npm run test:report
